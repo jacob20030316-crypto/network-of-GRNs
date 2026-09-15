@@ -1,7 +1,7 @@
 # The mechanistic accounts
 
-One file per disease pair, for the 222 pairs whose recurring factors survived
-the permutation null at a false discovery rate of 0.05.
+One file per disease pair, for the pairs whose recurring factors survived the
+permutation null at a false discovery rate of 0.05.
 
 Each was written by the biologist agent from an evidence pack: the factors and
 how often each recurred across that pair's patient groups, what Open Targets
@@ -28,9 +28,6 @@ echo.
 whether the relationship is already known, and whether the evidence in front of
 the agent carries the account. A well-supported account of a known axis and a
 thinly-supported guess at a new one are different results.
-
-    verdict            supported 138   unexpected 56   incoherent 28
-    support_strength   moderate 135    weak 34    insufficient 28    strong 25
 
 Two things to know when reading them.
 
