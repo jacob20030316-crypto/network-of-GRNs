@@ -1,0 +1,22 @@
+{
+ "pair_id": "Irritable_bowel_syndrome_(IBS)||Liver_Cancer",
+ "programme": "HOXB5, HOXB6 and MECOM converge on a VEGFR2(KDR)-Angiopoietin/Tie2 vascular-remodeling axis (KDR, ANGPT1, ANGPT2, TEK); ETV4, BARX2 and ZNF410 carry a matrix-metalloproteinase/TIMP/urokinase ECM-remodeling and invasion arm (MMP1/2/7/13/14, TIMP1/3, PLAU, PLAUR); BCL11B adds a TGFβ-SNAI1/2-CTNNB1 EMT arm (TGFB1, TGFB2, TGFA, SNAI1, SNAI2, CTNNB1, NOTCH1). Together these read as one angiogenesis-invasion-EMT cassette, the kind of module that drives tissue remodeling in chronic injury and tumor progression.",
+ "carrying_factors": [
+  "HOXB5",
+  "HOXB6",
+  "MECOM",
+  "ETV4",
+  "BARX2",
+  "ZNF410",
+  "BCL11B"
+ ],
+ "role_in_a": "IBS is a functional bowel disorder without established structural remodeling: no consistent fibrosis, neoangiogenesis or matrix invasion is part of its accepted pathophysiology. If this cassette is active in IBS colon, the most defensible reading is a low-amplitude mucosal barrier/microvascular signal (as suggested by post-infectious IBS literature), not a validated disease mechanism.",
+ "role_in_b": "In liver cancer this is textbook HCC biology: VEGF/Angiopoietin-Tie2 signaling drives the tumor's neoangiogenic switch (the rationale for anti-angiogenic HCC therapy), MMP/uPA-PLAUR-TIMP turnover degrades the capsule and permits invasion/metastasis, and TGFβ-Snail-mediated EMT underlies the invasive, mesenchymal-like HCC phenotype.",
+ "shared_axis": "Both organs sit downstream of chronic epithelial injury-and-repair signaling, and the liver's fibrosis-to-HCC trajectory runs through exactly this angiogenesis/ECM-remodeling/EMT cassette. Whether a comparable low-level activation exists in IBS colonic mucosa as part of barrier-repair signaling is a plausible but unproven bridge, not something documented in the record.",
+ "verdict": "unexpected",
+ "support_strength": "weak",
+ "reasoning": "The seven carrying factors assemble into a programme that is genuinely nameable and well characterized in liver cancer, but almost nothing in the retrieved record places these factors in either disease individually, let alone connects the pair: only MECOM's high Open Targets percentile touches IBS, and it touches IBS alone, not liver cancer or a shared axis. Because IBS is a functional rather than structural/vascular disorder, the anatomical and clinical fit for this specific cassette is not self-evident, so the account is coherent but thinly supported rather than demonstrated.",
+ "support": "none found for the carrying factors as a group. MECOM shows an Open Targets association with IBS (percentile 0.958 of 2050 genes) but no corresponding Liver_Cancer association, so it places the factor in only one side of the pair. The single retrieved primary-literature hit, PMID 24675898 (miR-424 down-regulation and MYB/hepatocellular carcinoma), concerns MYB, which is not among the carrying factors for this angiogenesis/ECM/EMT programme and so is not counted as support for it.",
+ "how_to_falsify": "Profile colonic mucosal biopsies or organoids from IBS patients versus controls for the programme's transcriptional signature (KDR, ANGPT1/2, TEK, MMP1/2/7/13/14, PLAU/PLAUR, TGFB1/2, SNAI1/2) and test by ChIP or reporter assay whether HOXB5, HOXB6 or MECOM actually bind and activate KDR/ANGPT2/TEK in colon tissue. If no differential activation of this cassette is found in IBS relative to non-diseased colon, or if it fails to track with HCC angiogenic/invasive signatures, the shared-axis claim is false.",
+ "caveats": "The colorectal-liver pairing draws on only 1 independent cohort pair across 40 patient-group comparisons, so full-concordance factors like ZNF410 (40/40) reflect one underlying dataset rather than independent replication. HR was excluded from the programme entirely because the reader's note flags all its retrieved hits as ambiguous ('HR' as hazard ratio or surgical abbreviation, not the gene). MYB has the only genuine literature support in this pair, but its target profile (proliferation/survival/hematopoietic genes) does not fit the angiogenesis-ECM-EMT module, so it was not treated as carrying. The four single-view factors (KLF8, KLF2, NKX3-1, GCM1) were correctly excluded and play no role here; no tissue-generic exclusion list was provided for this pair."
+}

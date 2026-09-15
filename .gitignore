@@ -1,0 +1,46 @@
+# Data. The pipeline's inputs and intermediates are configured in
+# grn/paths.py and distributed separately; only the accounts it produced are
+# carried here.
+/Data/*
+!/Data/interpretations/
+../Data/
+*.npy
+*.npz
+*.parquet
+*.feather
+
+# Agent products and their caches
+/preprocess/output/
+**/verdicts/
+**/packets/
+**/evidence/
+**/cache/
+failures.jsonl
+
+# Credentials. env.example is the template and is tracked; .env never is.
+.env
+.env.*
+!env.example
+
+# Checkpoints
+.done/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Logs and scratch
+*.log
+nohup.out
+nohup_*.out
+*.bak
+*.tmp
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store

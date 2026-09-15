@@ -1,0 +1,42 @@
+# The analysis environment.
+#
+#     conda env create -f environment.yml && conda activate grn
+#
+# The de novo inference stage needs more than the rest of the pipeline —
+# arboreto, pySCENIC and their dask stack — and those pin older versions of
+# numpy and pandas than everything else wants. They are therefore listed
+# separately at the bottom and are only required if you re-run the inference in
+# `scripts/infer_denovo.py`; every other stage runs without them, starting from
+# the regulons that stage leaves behind.
+#
+# Cohort preprocessing has its own dependencies and its own environment; see
+# preprocess/requirements.txt.
+name: grn
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - pyarrow            # Open Targets is distributed as parquet
+  - requests           # Europe PMC, and the OpenAI-compatible backends
+  - matplotlib         # figures
+  - tqdm
+  - pip
+  - pip:
+      # Agent backends. None is required to run the computation; each is
+      # needed only for the backend you choose in grn/agents/llm.py.
+      #   claude-cli   no package — the `claude` command, logged in
+      #   openai       needs nothing beyond requests; the backend is plain HTTP
+      #   anthropic    the package below
+      - anthropic
+
+      # --- de novo inference only -------------------------------------------
+      # Install these in a separate environment if the versions clash:
+      #     conda create -n grn-scenic python=3.10
+      #     pip install pyscenic arboreto
+      # - pyscenic
+      # - arboreto
+      # - dask[distributed]

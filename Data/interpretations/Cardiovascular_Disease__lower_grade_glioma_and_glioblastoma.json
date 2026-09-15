@@ -1,0 +1,19 @@
+{
+ "pair_id": "Cardiovascular_Disease||lower_grade_glioma_and_glioblastoma",
+ "programme": "HOXB5, HTATIP2, GSC and FOXF1 converge on a VEGF/angiopoietin-integrin-cadherin angiogenic remodeling module: HOXB5 targets KDR (VEGFR2), ANGPT2 and TNC; HTATIP2 (TIP30) targets VEGFA, MET, MMP2, FN1 and TGFB1; GSC targets CDH5 (VE-cadherin), EPHA7 and INHBA; FOXF1 targets ITGB3, SELP, FGF2 and HGF. Each factor independently reaches a different node of the same endothelial sprouting/vessel-stabilization circuitry.",
+ "carrying_factors": [
+  "HOXB5",
+  "HTATIP2",
+  "GSC",
+  "FOXF1"
+ ],
+ "role_in_a": "In cardiovascular disease this axis is the substrate of pathological vascular remodeling: VEGFR2/angiopoietin-driven neovascularization in atherosclerotic plaques and ischemic tissue, with SELP and ITGB3 governing leukocyte-endothelial adhesion and platelet-endothelial interaction during vessel injury and repair.",
+ "role_in_b": "In lower-grade glioma and glioblastoma, VEGFA/VEGFR2-driven angiogenesis is a defining hallmark of high-grade disease, and VE-cadherin (CDH5)-dependent vascular mimicry together with MMP2-mediated matrix remodeling support the tumor-vascular niche that anti-angiogenic therapy targets.",
+ "shared_axis": "Both tissues undergo pathological, VEGF-centered angiogenic remodeling — ischemic/atherosclerotic vessel growth in the vasculature versus tumor neovascularization in glioma — and these four factors' target genes sit on the shared VEGFR2/angiopoietin/integrin-cadherin machinery that drives endothelial sprouting and stabilization in both settings.",
+ "verdict": "supported",
+ "support_strength": "weak",
+ "reasoning": "The angiogenic convergence is visible directly in the GRN target lists (KDR, ANGPT2, VEGFA, CDH5, ITGB3, SELP, MMP2, FGF2, HGF all cluster under these four factors), which is a real within-data signal, and angiogenesis is independently well established in both cardiovascular disease and high-grade glioma biology. But the retrieved record barely corroborates it for these specific factors: three of the four carrying factors have no literature hit at all in either disease, FOXF1's only Open Targets signal in Cardiovascular_Disease is a low percentile (0.0615 of 260), and the sole applicable hits (for GSC) are explicitly flagged as likely referring to 'glioma stem cells' as a cell-type term rather than the goosecoid gene, so they are not usable as confirming evidence.",
+ "support": "PMID 37980347, 33986860, 29251326, 31530290 — each retrieved under the query 'GSC' + glioma and concerns glioma stem cell biology (rRNA modification, DRP1 interference, isoliquiritigenin, STAT6/HIF-1α), but per the reader's note these likely reference glioma stem cells as a cell population rather than the GSC/goosecoid transcription factor, so none are treated as confirming this account.",
+ "how_to_falsify": "Knock down HOXB5, HTATIP2, GSC and FOXF1 individually in matched endothelial cells derived from atherosclerotic/ischemic vascular tissue and from glioma-associated vasculature, and measure VEGFR2, ANGPT2, VE-cadherin and MMP2 expression plus tube-formation/sprouting activity; if the four factors do not concordantly regulate these targets and phenotypes across both endothelial contexts, the shared-axis account is wrong.",
+ "caveats": "Only 2 independent cohort pairs underlie the 184 patient-group comparisons, so replication depth is much shallower than the comparison count suggests. Blood and brain are anatomically and functionally distinct vascular beds, and the connection here rests on shared endothelial biology rather than any disease-specific literature. None of the four carrying factors appear on the tissue-generic exclusion list, so the signal is not an artifact of a generic vascular/immune regulator; but likewise none of the single-view factors (KLF2, STAT5B, ATRX, etc.) reinforce this angiogenesis story, so it stands on exactly these four recurring factors and no others."
+}

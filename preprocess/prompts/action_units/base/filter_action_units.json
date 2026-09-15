@@ -1,0 +1,16 @@
+{
+  "agent_id": "filter",
+  "version": "1.1",
+  "is_generated": false,
+  "generated_at": null,
+  "action_units": [
+    {
+      "name": "Filter Disease Data",
+      "instruction": "\nCall `process_disease(in_data_root, output_root, trait)` once for the current trait. The function handles everything end-to-end:\n  - Auto-detects whether 'TCGA.csv' exists for the trait. If yes, only TCGA is processed. Otherwise the largest GEO cohort is processed, with automatic fallback to the next-largest cohort when the Disease=1 subset has <10 samples (control case only).\n  - Splits samples by trait (Disease=1/0), Age (<40, [40, 60], >60), and Gender (0/1) where the relevant columns exist. Age and Gender splits are taken within Disease=1 for the control case, and over the full dataset otherwise.\n  - Saves only subsets with >=10 samples, as gene-only matrices (clinical columns dropped).\n  - Maintains an idempotent checkpoint via a `.completed` marker inside each disease's output folder, so reruns skip work that already finished.\n  - Logs a WARNING if TCGA Disease=1 has <10 samples (manual fallback to GEO required) or if all GEO cohorts are exhausted without success.\n",
+      "metadata": {
+        "requires_domain_knowledge": false,
+        "no_history": false
+      }
+    }
+  ]
+}

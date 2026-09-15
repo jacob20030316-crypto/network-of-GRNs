@@ -1,0 +1,19 @@
+{
+ "pair_id": "Kidney_Papillary_Cell_Carcinoma||lower_grade_glioma_and_glioblastoma",
+ "programme": "FOS, CEBPB, EGR2 and JDP2 form the classic immediate-early/AP-1-family transcriptional response (FOS as AP-1 partner, CEBPB as its inflammatory co-regulator, EGR2 as a MAPK/ERK-induced zinc-finger IEG, JDP2 as a bZIP AP-1/ATF2 modulator) that fires downstream of receptor-tyrosine-kinase/MAPK signaling and drives proliferation, ECM remodeling and inflammatory output (targets include EGFR, MMP1, MMP13, CD44, CDKN1A, IL6, CXCL8, IL1B).",
+ "carrying_factors": [
+  "FOS",
+  "CEBPB",
+  "EGR2",
+  "JDP2"
+ ],
+ "role_in_a": "In papillary RCC, this IEG/AP-1 module is the transcriptional output of HGF-MET signaling, the defining oncogenic driver of papillary RCC type 1 — HGF stimulation of renal tubular cells induces FOS and drives mitogenic/invasive target genes (MMP1, MMP13, CD44, EGFR, CDKN1A).",
+ "role_in_b": "In glioma/GBM, the same IEG/AP-1 module is the expected transcriptional output of EGFR/RTK-MAPK signaling, a hallmark GBM alteration, feeding proliferative and inflammatory gene expression (IL6, CXCL8, IL1B via CEBPB); this specific link is not documented in the material retrieved here.",
+ "shared_axis": "Both tumors are driven by an activated receptor tyrosine kinase (MET in papillary RCC, EGFR in GBM) converging on MAPK/ERK signaling, and this module is the shared immediate-early transcriptional readout of that convergent signaling rather than a tissue-specific programme.",
+ "verdict": "supported",
+ "support_strength": "moderate",
+ "reasoning": "The module is nameable and internally consistent (FOS/JUN-family, CEBPB, EGR2, JDP2 are co-regulated IEGs), and two of its four members are independently placed in papillary RCC by the retrieved record, so the disease-A role is not purely inferred. No retrieved paper places any of the four in glioma, so the disease-B leg and the cross-disease link rest on the general RTK-MAPK biology of GBM rather than on anything retrieved, keeping this at moderate rather than strong.",
+ "support": "PMID 9652757 — HGF-stimulated c-fos induction in renal tubular cells, in a paper on renal tubular mitogenesis that also references familial papillary RCC; PMID 29302811 — profiles JDP2 among genes altered in blood cells of patients with hereditary leiomyomatosis and renal cell cancer syndrome, which includes papillary RCC. None found for CEBPB or EGR2 specifically, and none found for any of the four in glioma/GBM.",
+ "how_to_falsify": "Block MET signaling in HGF-driven papillary RCC cells and EGFR/MAPK signaling in GBM cells in parallel, then measure FOS, CEBPB, EGR2 and JDP2 induction and their downstream targets (MMP1/MMP13, CDKN1A, IL6/CXCL8); if inhibiting the respective RTK driver fails to suppress this IEG module in both tumor types, the shared-axis claim is wrong.",
+ "caveats": "Kidney and brain share no organ system, so any shared axis must be convergent-signaling, not tissue biology; only 1 independent cohort pair underlies the 322 patient-group comparisons, so the counts reflect repeated clinical stratifications of essentially one cohort combination rather than independent replication, and the best-supported carrying factor (FOS) is concordant in only 171/322 (~53%). The developmental/lineage factors in the list (FOXA1, ONECUT1, NR5A2, MSX1, ZBTB16, MAFB, FOXS1) and the immune factor CIITA recur at similar or higher counts but do not share a mechanism with the IEG module or with each other, so they are deliberately excluded from carrying_factors rather than omitted by oversight; the single-view and tissue-generic exclusion lists confirm that generic-immune (RFX5, STAT4, FOXP3) and one-off high-percentile hits (ZNF304, TCF3, FOXA2, etc.) were already screened out before this account was built."
+}

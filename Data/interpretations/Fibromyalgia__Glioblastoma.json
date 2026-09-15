@@ -1,0 +1,17 @@
+{
+ "pair_id": "Fibromyalgia||Glioblastoma",
+ "programme": "HEY1 and HES4 are the two HES/HEY-family bHLH transcriptional repressors in the list, the canonical direct effectors of Notch signaling. HEY1's own target set closes the loop onto the pathway itself (NOTCH1, NOTCH2, NOTCH4, HES1), while HES4 represses the proneural determinant ASCL1 and the cell-cycle brake CDKN1A — together the module that Notch activation uses to hold cells in an undifferentiated, proliferative state.",
+ "carrying_factors": [
+  "HEY1",
+  "HES4"
+ ],
+ "role_in_a": "No role is documented or evidenced for this axis in fibromyalgia in the material available. Fibromyalgia is a centrally-mediated chronic pain/sensitization disorder, and none of the retrieved records connect Notch-effector signaling to it.",
+ "role_in_b": "Notch signaling through HEY1/HES4 is a recognized driver of glioma stem-cell maintenance, suppression of proneural differentiation, and treatment resistance; this is directly supported here by a Notch2-HEY1 radioresistance axis and a review of Notch pathway regulation in glioblastoma.",
+ "shared_axis": "None is documented. If HEY1/HES4-driven Notch activity mattered in both, it would have to run through some peripheral or glial role of Notch in nociceptive sensitization rather than through the stemness/proliferation program the retrieved evidence actually describes — and nothing here supports that extension.",
+ "verdict": "unexpected",
+ "support_strength": "moderate",
+ "reasoning": "HEY1/HES4 form a textbook-coherent Notch-effector pair regardless of retrieval, and HEY1 (21/32) is independently placed in glioblastoma by two on-topic papers, so the module and the glioblastoma side are real. HES4's glioblastoma link is inferred by pathway membership rather than evidenced, and fibromyalgia has zero retrieved or anatomically obvious connection to this axis, so the cross-disease claim rests on reasoning, not record.",
+ "support": "PMID 39501373 — Notch2-HEY1 axis drives radioresistance in glioblastoma (places HEY1 in GBM). PMID 38279763 — review of non-coding RNA regulation of the Notch pathway in glioblastoma, HEY1 included (places HEY1 in GBM). No PMID places HES4 or this axis in fibromyalgia.",
+ "how_to_falsify": "Inhibit Notch/HEY1-HES4 activity (gamma-secretase inhibitor or HEY1/HES4 knockdown) in glioblastoma stem-cell lines and confirm loss of NOTCH1/2/4-HES1 feedback and re-induction of ASCL1/CDKN1A, as expected; in parallel, test HEY1/HES4 expression and Notch target de-repression in a fibromyalgia-relevant tissue (dorsal root ganglion or glial cells in a central-sensitization pain model) — if Notch effector activity and its targets are unchanged or absent there, the shared-axis claim is falsified.",
+ "caveats": "Cross-tissue comparison (blood-derived network for fibromyalgia vs. tumor tissue for glioblastoma) is indirect by construction. Only 2 independent cohort pairs underlie the 32 patient-group comparisons, so the concordance counts reflect limited true replication, not 32 independent confirmations. HES4's placement in glioblastoma is not evidenced by any retrieved paper (reader's note: all HES4 hits are off-topic), so its role here rests on shared pathway membership with HEY1, not direct citation. Open Targets records no fibromyalgia association for either factor. Neither HEY1 nor HES4 appears on the single-view or tissue-generic exclusion lists, so their recurrence is not an artifact of those exclusions."
+}

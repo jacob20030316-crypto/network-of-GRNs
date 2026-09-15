@@ -1,0 +1,22 @@
+{
+ "pair_id": "Fibromyalgia||Liver_Cancer",
+ "programme": "A convergent cell-cycle checkpoint battery: MYBL2 (RB1, E2F1, MYC, CCND1, CCNB1, CDK2), MYB (CDKN2A, CDKN2B), CREB1 (CCND1), POU2F1 (CDC6, RRM2, GADD45A, CCND1), EWSR1 (CDKN1A, CDKN1B, CDKN1C, CCNE1, TERT) and TRERF1 (CDKN1A, CDKN1B, CDKN2A) all converge on the same small set of cyclin/CDK and CDK-inhibitor genes, i.e. a G1-S/G2-M restriction-point control network rather than a single physical complex.",
+ "carrying_factors": [
+  "MYBL2",
+  "MYB",
+  "CREB1",
+  "POU2F1",
+  "EWSR1",
+  "TRERF1",
+  "TGIF1"
+ ],
+ "role_in_a": "If active in Fibromyalgia blood, this battery would show up as altered checkpoint/stress-response transcription in circulating leukocytes (CREB1 stress-signaling target CCND1, POU2F1 in immune/muscle cells) rather than frank proliferation — there is no established cell-cycle mechanism in fibromyalgia, and CREB1's own Open Targets score (0.4639 percentile) is modest, not a top hit.",
+ "role_in_b": "In Liver_Cancer this is a textbook hallmark: loss of CDK-inhibitor control (CDKN1A/B/C, CDKN2A/B) and gain of cyclin/E2F/MYC/TERT activity drives hepatocyte proliferation and immortalisation; MYB has direct retrieved support here via PMID 24675898.",
+ "shared_axis": "The only defensible bridge is that both tissues could co-opt the same TF-to-checkpoint-gene wiring for different ends — proliferative escape in hepatocytes, altered leukocyte turnover/stress response in blood — but nothing in the retrieved record states this connection; it is inferred from shared target genes, not observed.",
+ "verdict": "unexpected",
+ "support_strength": "weak",
+ "reasoning": "The target-gene convergence on CDKN1A/B/C, CDKN2A/B, CCND1/B/E, CDK2, E2F1, MYC and TERT across seven high-concordance factors is a real, nameable module, but almost none of it is anchored to either disease: no factor has an Open Targets association in Liver_Cancer, only CREB1 has one in Fibromyalgia (and it is modest), and the only disease-specific literature (MYB/HCC, POU2F1/statin myalgia, CREB1/depression) is either single-disease or explicitly marked uncertain by the reader. Blood (pain/fatigue) and liver (tumor) also have no obvious anatomical or clinical link, so this stays unexpected rather than supported.",
+ "support": "PMID 24675898 — MYB placed in Liver_Cancer via a miR-424/HCC migration-invasion study (liver-side only, does not touch Fibromyalgia); PMID 28771594 — POU2F1 in statin-induced myalgia gene expression, uncertain whether this is fibromyalgia proper; PMID 24143878 — CREB1 in medication-refractory depression, uncertain relevance to fibromyalgia; PMID 40630716 and PMID 40084340 — EWSR1-related tumors, do not mention Fibromyalgia and tissue relevance to Liver_Cancer is unclear.",
+ "how_to_falsify": "Take PBMCs from fibromyalgia patients and HCC tumor tissue and test by ChIP/CUT&RUN or knockdown whether MYBL2, CREB1, POU2F1, EWSR1 and TRERF1 actually occupy and regulate the same checkpoint promoters (CDKN1A, CDKN2A, CCND1, CDC6) in both tissues, and whether cell-cycle/proliferation markers (Ki67, cyclin D1 protein) are measurably altered in fibromyalgia PBMCs; if the checkpoint genes are not co-regulated in the blood side, or proliferation markers are unchanged, the shared-axis claim fails.",
+ "caveats": "All 40 patient-group comparisons come from a single independent cohort pair, so this concordance has not been replicated across separate cohort pairings and should be read as one data point, not independent confirmation. Tissue pairing is blood (fibromyalgia) vs liver (hepatocellular carcinoma) with no shared anatomy. The single-view exclusions (SPI1, CIITA, TCF4, TAL1 and others removed as tissue-generic to blood/liver) show the surviving factors are not just a generic immune or hepatocyte signature, which is why the checkpoint-gene convergence among MYBL2/MYB/CREB1/POU2F1/EWSR1/TRERF1 is worth noting at all — but the near-total absence of Open Targets associations and disease-specific literature for these factors means the account rests on target-gene overlap, not documented cross-disease evidence."
+}
