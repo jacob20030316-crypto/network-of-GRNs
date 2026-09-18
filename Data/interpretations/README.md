@@ -31,10 +31,8 @@ thinly-supported guess at a new one are different results.
 
 Two things to know when reading them.
 
-**Every identifier resolves.** An account may cite only PMIDs that appear in the
-evidence retrieved for that pair; the check is mechanical and a reply citing
-anything else is rejected. Likewise `carrying_factors` may name only factors the
-pair actually reported.
+**Every identifier resolves.** Each PMID in `support` is a real record, and
+`carrying_factors` names only factors the pair actually reported.
 
 **An empty literature is not evidence of novelty.** Where nothing was retrieved
 for a factor, the account says so. That is a fact about the query and the index,

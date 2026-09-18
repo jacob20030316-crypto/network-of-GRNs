@@ -349,6 +349,13 @@ def main(argv=None):
     for col in ("strength", "agreement", "joint"):
         O[f"q_{col}"] = bh(O[f"p_{col}"].values)
 
+    # Factor level: the twelve rank-matched probabilities of a pair are
+    # corrected together, within that pair.
+    rank_p = [f"p_r{j + 1}" for j in range(TOP_TFS)]
+    Q = np.vstack([bh(row) for row in O[rank_p].values.astype(float)])
+    for j in range(TOP_TFS):
+        O[f"q_r{j + 1}"] = Q[:, j]
+
     O = O.sort_values("p_joint")
     O.to_csv(f"{OUT}/mechanism_null_{args.net}.csv", index=False)
 

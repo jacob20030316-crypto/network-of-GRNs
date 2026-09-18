@@ -34,7 +34,9 @@ Fields per TF:
                tissue-matched background's 90th percentile. The headline.
   recur_fold   that rate over the 0.10 a random TF would give. The gate.
   bg_pctl      median over views of the TF's percentile against its own
-               background. Reported, and a tie-break.
+               background. Reported.
+  median_cos   median agreement across the pair's view pairs. The tie-break,
+               as in the split-half agreement and the permutation null.
   direction    concordant / discordant — the weights are signed correlations,
                so opposite coupling is visible and is not the same as absent.
   tissue_prog  whether the whole tissue class shares this TF anyway, computed
@@ -153,7 +155,7 @@ def generality(A, top_k):
     from collections import Counter
     c, n = Counter(), A.pair.nunique()
     for _, s in A[~A.tissue_programme & A.passes_gate].groupby("pair"):
-        c.update(s.sort_values(["recurrence", "bg_pctl"], ascending=False)
+        c.update(s.sort_values(["recurrence", "median_cos"], ascending=False)
                  .head(top_k).tf)
     return {t: v / n for t, v in c.items()}, n
 
@@ -368,7 +370,7 @@ def main(argv=None):
         rows.append(R)
 
         keep = R[~R.tissue_programme & R.passes_gate].sort_values(
-            ["recurrence", "bg_pctl"], ascending=False)
+            ["recurrence", "median_cos"], ascending=False)
         d = D[D.pair == pair]
         print(f"=== {pair} ===")
         if len(d):
