@@ -46,6 +46,8 @@ network-of-networks agent, an assistant agent and a biologist agent.
 ├── scripts/
 │   └── infer_denovo.py       # De novo regulon inference
 └── Data/
+    ├── reported_factors.csv  # Regulators reported for each disease pair
+    ├── denovo_reported_factors.csv       # The same, without a curated catalogue
     └── interpretations/      # Mechanistic interpretations of the reported disease pairs
 ```
 
@@ -157,6 +159,9 @@ Stages whose outputs already exist are skipped, so an interrupted run resumes.
 | `Data/05_networks/` | Curated-scaffold and de novo networks |
 | `Data/06_readout/` | Calibration, permutation null and network inspection |
 | `Data/07_agent/` | Evidence and mechanistic interpretations |
+
+What the pipeline reported is included in this repository under `Data/`; see
+`Data/README.md`. The cohorts it starts from are linked above.
 
 ## License
 

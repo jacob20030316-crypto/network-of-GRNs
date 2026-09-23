@@ -1,8 +1,12 @@
 # Data. The pipeline's inputs and intermediates are configured in
-# grn/paths.py and distributed separately; only the accounts it produced are
-# carried here.
+# grn/paths.py and distributed separately; only what it reported is carried
+# here.
 /Data/*
+!/Data/README.md
 !/Data/interpretations/
+!/Data/reported_factors.csv
+!/Data/denovo_reported_factors.csv
+!/Data/denovo_shared_target_enrichment.csv
 ../Data/
 *.npy
 *.npz
